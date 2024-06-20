@@ -1,10 +1,9 @@
-
-
+import Home from '../src/Components /Home.jsx'
 function App() {
   return (
-    <div className="App">
-    </div>
+      <>
+          <Home/>
+      </>
   );
 }
-
 export default App;
