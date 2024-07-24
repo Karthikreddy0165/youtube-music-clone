@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2902b33-a96b-4405-a86a-7aac48f88724" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components /Albums.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components /Albums.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components /Artists.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components /Artists.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components /Carousel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components /Carousel.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components /Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components /Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components /SideBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components /SideBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components /SignUp.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components /SongTemplate.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components /SongTemplate.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Home.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Library.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Library.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/SignUp.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/SignUp.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Upgrade.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Upgrade.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/context/AudioContext.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/AudioContext.jsx" afterDir="false" />
-    </list>
+    <list default="true" id="a2902b33-a96b-4405-a86a-7aac48f88724" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,7 +37,7 @@
   "keyToString": {
     "Node.js.Home.jsx.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "version1.0",
+    "git-widget-placeholder": "check",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/karthikreddy/Desktop/Summer-Projects-YouTube-Music-Clone---Summer-Project---evyu4sw99lon",
     "list.type.of.created.stylesheet": "CSS",
@@ -244,7 +228,7 @@
       <workItem from="1721146987245" duration="536000" />
       <workItem from="1721191202444" duration="6090000" />
       <workItem from="1721326069757" duration="15497000" />
-      <workItem from="1721724895937" duration="13319000" />
+      <workItem from="1721724895937" duration="13769000" />
     </task>
     <servers />
   </component>
