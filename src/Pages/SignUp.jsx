@@ -32,6 +32,7 @@ function SignUp() {
 
         if (!validatePassword(password)) {
             alert('Password must be at least 6 characters long and include both lowercase, uppercase letters, and symbols.');
+            setPassword('')
             return;
         }
 

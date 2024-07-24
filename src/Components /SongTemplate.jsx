@@ -35,7 +35,6 @@ const SongTemplate = ({ song, isLogin }) => {
             navigate('/signin');
         }
     };
-
     const handlePauseClick = () => {
         setIsPlaying(false);
     };

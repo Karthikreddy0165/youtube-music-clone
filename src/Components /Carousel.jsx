@@ -1,9 +1,10 @@
 import {Carousel} from "primereact/carousel";
-import {useEffect, useState} from "react";
+import {useEffect, useState, useContext} from "react";
 import SongTemplate from "./SongTemplate";
+import {AudioContext} from '../context/AudioContext'
 
 export default function MyCarousel({title, api, isLogin}){
-    const [songs, setSongs] = useState([])
+    const {songs, setSongs} = useContext(AudioContext)
     useEffect(()=>{
         const fetchSongs = async () =>{
             try {

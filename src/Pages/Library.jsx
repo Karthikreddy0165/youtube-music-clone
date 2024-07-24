@@ -12,12 +12,12 @@ function Library({ isLogin, setIsLogin }) {
 
     return (
         <div className="flex flex-col">
-            <Sidebar />
+            <Sidebar handleButtonClick = {handleButtonClick} />
             <Navbar isLogin={isLogin} setIsLogin={setIsLogin} />
 
             <div className="mt-24 flex flex-col">
                 <div className="flex ml-80 gap-6 px-4">
-                    <Link to="/library/songs">
+                    <Link to="/library/music">
                         <button
                             className={`rounded-md py-2 px-4  ${
                                 activeButton === 'songs' ? 'bg-white text-black' : 'bg-[#2C2B2F] text-[#C7C7C8]'
@@ -27,7 +27,7 @@ function Library({ isLogin, setIsLogin }) {
                             Songs
                         </button>
                     </Link>
-                    <Link to="/library/albums">
+                    <Link to="/library/album">
                         <button
                             className={`rounded-md py-2 px-4  ${
                                 activeButton === 'albums' ? 'bg-white text-black' : 'bg-[#2C2B2F] text-[#C7C7C8]'
@@ -37,7 +37,7 @@ function Library({ isLogin, setIsLogin }) {
                             Albums
                         </button>
                     </Link>
-                    <Link to="/library/playlists">
+                    <Link to="/library/playlist">
                         <button
                             className={`rounded-md py-2 px-4  ${
                                 activeButton === 'playlists' ? 'bg-white text-black' : 'bg-[#2C2B2F] text-[#C7C7C8]'
@@ -47,7 +47,7 @@ function Library({ isLogin, setIsLogin }) {
                             Playlists
                         </button>
                     </Link>
-                    <Link to="/library/artists">
+                    <Link to="/library/artist">
                         <button
                             className={`rounded-md py-2 px-4  ${
                                 activeButton === 'artists' ? 'bg-white text-black' : 'bg-[#2C2B2F] text-[#C7C7C8]'
@@ -59,7 +59,6 @@ function Library({ isLogin, setIsLogin }) {
                     </Link>
                 </div>
             </div>
-
             <Outlet />
         </div>
     );

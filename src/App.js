@@ -11,6 +11,13 @@ import Artists from './Components /Artists';
 import Playlists from './Components /Playlists';
 import { AudioContext } from './context/AudioContext';
 import AlbumDetails from './Components /AlbumDetails';
+import ProfilePage from './Pages/ProfilePage'
+import Happy from './Components /Happy'
+import Sad from './Components /Sad'
+import Angry from './Components /Angry'
+import Exicted from './Components /Exicted'
+import Romantic from './Components /Romantic'
+import Mood from './Components /Mood'
 
 function App() {
     const { isLogin, setIsLogin } = useContext(AudioContext);
@@ -18,34 +25,53 @@ function App() {
     const router = createBrowserRouter([
         {
             path: '/',
-            element: <Home isLogin={isLogin} setIsLogin={setIsLogin} />,
+            element: <Home isLogin={isLogin} setIsLogin={setIsLogin}/>,
         },
         {
-            path: '/signin/',
+            path: '/mood/happy',
+            element: <Happy isLogin={isLogin} setIsLogin={setIsLogin} />
+        },
+        {
+            path: '/mood',
+            element: <Mood isLogin={isLogin} setIsLogin={setIsLogin}/>,
+            children: [
+                { path: 'happy', element: <Happy isLogin={isLogin} setIsLogin={setIsLogin} /> },
+                {path: 'sad', element: <Sad isLogin={isLogin} setIsLogin={setIsLogin}/>,},
+                { path: 'angry', element: <Angry isLogin={isLogin} setIsLogin={setIsLogin} /> },
+                { path: 'exicted', element: <Exicted isLogin={isLogin} setIsLogin={setIsLogin} /> },
+                { path: 'romantic', element: <Romantic isLogin={isLogin} setIsLogin={setIsLogin} /> }
+            ],
+        },
+        {
+            path: '/signin',
             element: <SignIn setIsLogin={setIsLogin} />,
         },
         {
-            path: '/signup/',
+            path: '/signup',
             element: <SignUp />,
+        },
+        {
+            path: '/profile',
+            element: <ProfilePage isLogin={isLogin} setIsLogin={setIsLogin} />
         },
         {
             path: '/library',
             element: <Library isLogin={isLogin} setIsLogin={setIsLogin} />,
             children: [
-                { path: 'songs', element: <Songs isLogin={isLogin} /> },
+                { path: 'music', element: <Songs isLogin={isLogin} /> },
                 {
-                    path: 'albums',
+                    path: 'album',
                     element: <Albums isLogin={isLogin} setIsLogin={setIsLogin}/>,
                     children: [
                         { path: ':albumId', element: <AlbumDetails isLogin={isLogin} /> }
                     ]
                 },
-                { path: 'playlists', element: <Playlists /> },
-                { path: 'artists', element: <Artists /> },
-            ],
+                { path: 'playlist', element: <Playlists isLogin={isLogin} setIsLogin={setIsLogin} /> },
+                { path: 'artist', element: <Artists isLogin={isLogin} setIsLogin={setIsLogin} /> },
+            ]
         },
         {
-            path: '/subscription/',
+            path: '/subscription',
             element: <Upgrade isLogin={isLogin} setIsLogin={setIsLogin} />,
         },
     ]);

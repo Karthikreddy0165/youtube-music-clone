@@ -12,7 +12,7 @@ export default function Albums({ isLogin, setIsLogin }) {
     useEffect(() => {
         const fetchAlbums = async () => {
             try {
-                const response = await fetch('https://academics.newtonschool.co/api/v1/musicx/album/', {
+                const response = await fetch('https://academics.newtonschool.co/api/v1/musicx/album', {
                     headers: {
                         'accept': 'application/json',
                         'projectID': 'evyu4sw99lon',
@@ -21,16 +21,19 @@ export default function Albums({ isLogin, setIsLogin }) {
                 });
                 const data = await response.json();
                 setAlbums(data.data || []);
+
             } catch (error) {
                 console.error('Error fetching albums:', error);
             }
         };
         fetchAlbums();
+
     }, [jwt]);
 
     const handleAlbumClick = (albumId) => {
         if(isLogin){
-            navigate(`/library/albums/${albumId}`);
+            console.log(albums)
+            // navigate(`/library/album/${albumId}`);
         }
         else{
             navigate('/signin')
