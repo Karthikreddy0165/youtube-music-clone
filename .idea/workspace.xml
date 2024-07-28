@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a2902b33-a96b-4405-a86a-7aac48f88724" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components /Albums.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components /Albums.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components /Angry.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components /AudioPlayer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components /AudioPlayer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components /Carousel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components /Carousel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components /Exicted.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components /Happy.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components /Mood.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components /Mood.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components /Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components /Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components /Romantic.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components /Sad.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components /SearchInput.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components /SearchInput.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components /SideBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components /SideBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components /SongTemplate.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components /SongTemplate.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components /Songs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components /Songs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Library.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Library.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/ProfilePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/ProfilePage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/SignIn.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/SignIn.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/SignUp.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/SignUp.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Upgrade.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Upgrade.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/assets.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/assets.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/subsImg4 .png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/AudioContext.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/AudioContext.jsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JSX File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2hohrnkNwx9LAvRQ6GNDvXH6tKq" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Node.js.Home.jsx.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "check",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/karthikreddy/Desktop/Summer-Projects-YouTube-Music-Clone---Summer-Project---evyu4sw99lon",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assests" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Components" />
+      <recent name="$PROJECT_DIR$/src/Pages" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DjangoTestsConfigurationType">
+      <module name="Summer-Projects-YouTube-Music-Clone---Summer-Project---evyu4sw99lon" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Summer-Projects-YouTube-Music-Clone---Summer-Project---evyu4sw99lon" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Summer-Projects-YouTube-Music-Clone---Summer-Project---evyu4sw99lon" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="Summer-Projects-YouTube-Music-Clone---Summer-Project---evyu4sw99lon" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Python.FlaskServer">
+      <module name="Summer-Projects-YouTube-Music-Clone---Summer-Project---evyu4sw99lon" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="Summer-Projects-YouTube-Music-Clone---Summer-Project---evyu4sw99lon" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Docutils task">
+      <module name="Summer-Projects-YouTube-Music-Clone---Summer-Project---evyu4sw99lon" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Sphinx task">
+      <module name="Summer-Projects-YouTube-Music-Clone---Summer-Project---evyu4sw99lon" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a2902b33-a96b-4405-a86a-7aac48f88724" name="Changes" comment="" />
+      <created>1718266539633</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1718266539633</updated>
+      <workItem from="1718266541066" duration="1095000" />
+      <workItem from="1718268078923" duration="13683000" />
+      <workItem from="1718457841670" duration="480000" />
+      <workItem from="1718462847331" duration="1377000" />
+      <workItem from="1718469833074" duration="599000" />
+      <workItem from="1718480396913" duration="608000" />
+      <workItem from="1718543678399" duration="7634000" />
+      <workItem from="1718594315791" duration="24793000" />
+      <workItem from="1718767006981" duration="9772000" />
+      <workItem from="1719083449098" duration="601000" />
+      <workItem from="1719203625190" duration="7622000" />
+      <workItem from="1719369527649" duration="15408000" />
+      <workItem from="1719394367459" duration="8961000" />
+      <workItem from="1719675446084" duration="1027000" />
+      <workItem from="1719762636329" duration="37753000" />
+      <workItem from="1720071974105" duration="4099000" />
+      <workItem from="1720125008433" duration="4773000" />
+      <workItem from="1720155535696" duration="1504000" />
+      <workItem from="1720157870541" duration="9936000" />
+      <workItem from="1720235722184" duration="41000" />
+      <workItem from="1720425558778" duration="759000" />
+      <workItem from="1720427297771" duration="30330000" />
+      <workItem from="1720756833962" duration="358000" />
+      <workItem from="1720757234739" duration="40000" />
+      <workItem from="1720757281959" duration="6029000" />
+      <workItem from="1720898574400" duration="1665000" />
+      <workItem from="1720963467758" duration="1287000" />
+      <workItem from="1721146987245" duration="536000" />
+      <workItem from="1721191202444" duration="6090000" />
+      <workItem from="1721326069757" duration="15497000" />
+      <workItem from="1721724895937" duration="21751000" />
+      <workItem from="1721880529569" duration="2263000" />
+      <workItem from="1721983496672" duration="18062000" />
+      <workItem from="1722078201245" duration="1491000" />
+      <workItem from="1722081776432" duration="24593000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

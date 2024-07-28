@@ -12,7 +12,7 @@ export default function Albums({ isLogin, setIsLogin }) {
     useEffect(() => {
         const fetchAlbums = async () => {
             try {
-                const response = await fetch('https://academics.newtonschool.co/api/v1/musicx/album/', {
+                const response = await fetch('https://academics.newtonschool.co/api/v1/musicx/album', {
                     headers: {
                         'accept': 'application/json',
                         'projectID': 'evyu4sw99lon',
@@ -21,16 +21,19 @@ export default function Albums({ isLogin, setIsLogin }) {
                 });
                 const data = await response.json();
                 setAlbums(data.data || []);
+
             } catch (error) {
                 console.error('Error fetching albums:', error);
             }
         };
         fetchAlbums();
+        console.log(albums)
     }, [jwt]);
 
     const handleAlbumClick = (albumId) => {
         if(isLogin){
-            navigate(`/library/albums/${albumId}`);
+            console.log(albums)
+            navigate(`/library/album/${albumId}`);
         }
         else{
             navigate('/signin')
@@ -41,17 +44,17 @@ export default function Albums({ isLogin, setIsLogin }) {
     return (
         <div className='h-full bg-black pt-0'>
             <div className="flex">
-                <div className='bg-black ml-[17%] pt-16 overflow-y-auto w-full'>
-                    {albums.length > 0 && albums.map((album) => (
-                        <div key={album._id} onClick={() => handleAlbumClick(album._id)}>
-                            <Carousel value={album.songs} numVisible={6} numScroll={4} itemTemplate={(song) => (
-                                <SongTemplate song={song} isLogin={isLogin} />
-                            )} />
-                        </div>
+                {/*<div className='bg-black ml-[17%] pt-16 overflow-y-auto w-full'>*/}
+                    {/*{albums.length > 0 && albums.map((album) => (*/}
+                    {/*    <div key={album._id} onClick={() => handleAlbumClick(album._id)}>*/}
+                    {/*        <Carousel value={album.songs} numVisible={6} numScroll={4} itemTemplate={(song) => (*/}
+                    {/*            <SongTemplate song={song} isLogin={isLogin} />*/}
+                    {/*        )} />*/}
+                    {/*    </div>*/}
                     ))}
-                </div>
+                {/*</div>*/}
             </div>
-            <AudioPlayer />
+            // <AudioPlayer />
         </div>
     );
 }

@@ -2,11 +2,11 @@ import { assets } from '../assets/assets';
 
 export default function SearchInput() {
     return (
-        <div className="relative flex justify-center md:mr-96">
+        <div className="relative flex justify-center md:mr-24 lg:mr-96">
             <input
                 type="text"
                 placeholder="Search songs, albums, artists, podcasts"
-                className="text-white rounded-md p-2 pl-10 w-64 md:w-96"
+                className="text-white rounded-md p-2 pl-10 w-18 sm:w-54 md:w-60 lg:w-96"
                 style={{ backgroundImage: `url(${assets.searchBackground})` }}
             />
             <img

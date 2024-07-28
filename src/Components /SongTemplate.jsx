@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useNavigate } from 'react-router-dom';
 import { AudioContext } from '../context/AudioContext';
 
-const SongTemplate = ({ song, isLogin }) => {
+const SongTemplate = ({ song, isLogin, audioRef }) => {
     const { isPlaying, setIsPlaying, setCurrentSong, currentSongId, setCurrentSongId } = useContext(AudioContext);
     const navigate = useNavigate();
 
@@ -40,7 +40,6 @@ const SongTemplate = ({ song, isLogin }) => {
         setIsPlaying(false);
     };
 
-
     const artists = song.artist && song.artist.length > 0
         ? song.artist.map(artist => artist.name).join(', ').slice(0, 25) + (song.artist.length > 3 ? '...' : '')
         : '';
@@ -61,13 +60,23 @@ const SongTemplate = ({ song, isLogin }) => {
                 <FontAwesomeIcon
                     className="right-6 bottom-1/3 absolute opacity-0 group-hover:opacity-100 cursor-pointer rounded-full bg-black text-white p-4 transition-opacity duration-300"
                     icon={faPause}
-                    onClick={handlePauseClick}
+                    onClick={() => {
+                        handlePauseClick();
+                        if (audioRef.current) {
+                            audioRef.current.audio.current.pause();
+                        }
+                    }}
                 />
             ) : (
                 <FontAwesomeIcon
                     className="right-6 bottom-1/3 absolute opacity-0 group-hover:opacity-100 cursor-pointer rounded-full bg-black text-white p-4 transition-opacity duration-300"
                     icon={faPlay}
-                    onClick={handlePlayClick}
+                    onClick={() => {
+                        handlePlayClick();
+                        if (audioRef.current) {
+                            audioRef.current.audio.current.play();
+                        }
+                    }}
                 />
             )}
         </div>

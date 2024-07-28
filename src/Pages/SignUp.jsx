@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import InputField from '../Components /InputField'
+import {assets} from '../assets/assets'
+
 function SignUp() {
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -32,6 +34,7 @@ function SignUp() {
 
         if (!validatePassword(password)) {
             alert('Password must be at least 6 characters long and include both lowercase, uppercase letters, and symbols.');
+            setPassword('')
             return;
         }
 
@@ -72,7 +75,7 @@ function SignUp() {
                         <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
                             <div className="flex flex-col grow max-md:mt-10">
                                 <img
-                                    src="https://banner2.cleanpng.com/20180521/ers/kisspng-google-logo-5b02bbe1d5c6e0.2384399715269058258756.jpg"
+                                    src={assets.googleLogo}
                                     alt="Account creation icon"
                                     className="aspect-[0.97] w-[33px]"
                                 />

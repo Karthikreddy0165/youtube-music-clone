@@ -11,6 +11,8 @@ import Artists from './Components /Artists';
 import Playlists from './Components /Playlists';
 import { AudioContext } from './context/AudioContext';
 import AlbumDetails from './Components /AlbumDetails';
+import ProfilePage from './Pages/ProfilePage'
+import Mood from './Components /Mood'
 
 function App() {
     const { isLogin, setIsLogin } = useContext(AudioContext);
@@ -18,34 +20,30 @@ function App() {
     const router = createBrowserRouter([
         {
             path: '/',
-            element: <Home isLogin={isLogin} setIsLogin={setIsLogin} />,
+            element: <Home isLogin={isLogin} setIsLogin={setIsLogin}/>,
         },
         {
-            path: '/signin/',
+            path: '/mood/:mood',
+            element:<Mood isLogin={isLogin} setIsLogin={setIsLogin} />,
+        },
+        {
+            path: '/signin',
             element: <SignIn setIsLogin={setIsLogin} />,
         },
         {
-            path: '/signup/',
+            path: '/signup',
             element: <SignUp />,
         },
         {
-            path: '/library',
-            element: <Library isLogin={isLogin} setIsLogin={setIsLogin} />,
-            children: [
-                { path: 'songs', element: <Songs isLogin={isLogin} /> },
-                {
-                    path: 'albums',
-                    element: <Albums isLogin={isLogin} setIsLogin={setIsLogin}/>,
-                    children: [
-                        { path: ':albumId', element: <AlbumDetails isLogin={isLogin} /> }
-                    ]
-                },
-                { path: 'playlists', element: <Playlists /> },
-                { path: 'artists', element: <Artists /> },
-            ],
+            path: '/profile',
+            element: <ProfilePage isLogin={isLogin} setIsLogin={setIsLogin} />
         },
         {
-            path: '/subscription/',
+            path: '/library/:page',
+            element: <Library isLogin={isLogin} setIsLogin={setIsLogin} />
+        },
+        {
+            path: '/subscription',
             element: <Upgrade isLogin={isLogin} setIsLogin={setIsLogin} />,
         },
     ]);

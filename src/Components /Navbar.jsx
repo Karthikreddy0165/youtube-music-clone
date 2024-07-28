@@ -2,10 +2,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import {assets} from "../assets/assets";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import { AvatarComponent } from 'avatar-initials';
+import { useNavigate, Link } from "react-router-dom";
+import {Avatar} from 'primereact/avatar'
 import SearchInput from'./SearchInput'
-export default function Navbar({ isLogin, setIsLogin}) {
+
+
+export default function Navbar({ isLogin, setIsLogin, isSearchNotVisible}) {
     const navigate = useNavigate();
     const fullName = localStorage.getItem('name');
     let initials = '';
@@ -13,9 +15,9 @@ export default function Navbar({ isLogin, setIsLogin}) {
     if (fullName) {
         const nameParts = fullName.split(' ');
         if (nameParts.length === 1) {
-            initials = nameParts[0].charAt(0);
+            initials = nameParts[0].charAt(0).toUpperCase();
         } else {
-            initials = nameParts[0].charAt(0) + nameParts[nameParts.length - 1].charAt(0);
+            initials = nameParts[0].charAt(0).toUpperCase() + nameParts[nameParts.length - 1].charAt(0).toUpperCase();
         }
     }
 
@@ -28,6 +30,7 @@ export default function Navbar({ isLogin, setIsLogin}) {
     const handleLogout = () => {
         localStorage.removeItem('name');
         setIsLogin(false);
+        navigate('/')
     };
 
     return (
@@ -38,43 +41,28 @@ export default function Navbar({ isLogin, setIsLogin}) {
                     <img src={assets.logo} alt='logo' />
                 </div>
             </div>
-           <SearchInput/>
+            {isSearchNotVisible ? '' : <SearchInput/> }
             <div className="mr-24">
                 {isLogin ? (
                     <div className="relative" onClick={toggleDropdown}>
-                        <AvatarComponent
-                            initials={initials}
-                            size={36}
-                            className='cursor-pointer'
-                            background="#f4f6f7"
-                            color="#888888"
-                            classes="rounded-full"
-                            useGravatar={false}
-                            fontSize={20}
-                            fontWeight={400}
-                        />
+
+                        <Avatar className = 'w-12 h-12 text-xl' label={initials} shape="circle" style={{ backgroundColor: '#ffffff', color: 'C7DBE6'  }} />
+
 
                         {isDropdownVisible && (
-                            <div className="absolute bg-zinc-800 w-48 right-0 text-white rounded-md shadow-lg z-20">
-                                <div className='flex items-center p-4'>
-                                    <AvatarComponent
-                                        initials={initials}
-                                        size={36}
-                                        className='cursor-pointer'
-                                        background="#f4f6f7"
-                                        color="#888888"
-                                        classes="rounded-full"
-                                        useGravatar={false}
-                                        fontSize={20}
-                                        fontWeight={400}
-                                    />
-                                    <p className='ml-2'>{fullName}</p>
+                            <div className="absolute bg-zinc-800 w-48 right-0  rounded-md shadow-lg z-20">
+                                <div className='flex items-center p-6'>
+                                    <Avatar className = 'w-12 h-12 text-xl' label={initials} shape="circle" style={{ backgroundColor: '#ffffff', color: 'C7DBE6'  }} />
+
+                                    <p className='ml-2 text-white'>{fullName}</p>
                                 </div>
                                 <hr className="border-gray-600" />
                                 <ul>
-                                    <li className="px-4 py-2 cursor-pointer p-2">View Profile</li>
+                                    <Link to = '/profile'>
+                                    <li className="px-4 py-2 cursor-pointer p-2 text-white">View Profile</li>
+                                    </Link>
                                     <hr className="border-gray-600" />
-                                    <li className="px-4 py-2 cursor-pointer" onClick={handleLogout}>Logout</li>
+                                    <li className="px-4 py-2 cursor-pointer text-white" onClick={handleLogout}>Logout</li>
                                 </ul>
                             </div>
                         )}
