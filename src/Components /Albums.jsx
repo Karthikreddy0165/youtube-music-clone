@@ -27,13 +27,13 @@ export default function Albums({ isLogin, setIsLogin }) {
             }
         };
         fetchAlbums();
-
+        console.log(albums)
     }, [jwt]);
 
     const handleAlbumClick = (albumId) => {
         if(isLogin){
             console.log(albums)
-            // navigate(`/library/album/${albumId}`);
+            navigate(`/library/album/${albumId}`);
         }
         else{
             navigate('/signin')
@@ -44,17 +44,17 @@ export default function Albums({ isLogin, setIsLogin }) {
     return (
         <div className='h-full bg-black pt-0'>
             <div className="flex">
-                <div className='bg-black ml-[17%] pt-16 overflow-y-auto w-full'>
-                    {albums.length > 0 && albums.map((album) => (
-                        <div key={album._id} onClick={() => handleAlbumClick(album._id)}>
-                            <Carousel value={album.songs} numVisible={6} numScroll={4} itemTemplate={(song) => (
-                                <SongTemplate song={song} isLogin={isLogin} />
-                            )} />
-                        </div>
+                {/*<div className='bg-black ml-[17%] pt-16 overflow-y-auto w-full'>*/}
+                    {/*{albums.length > 0 && albums.map((album) => (*/}
+                    {/*    <div key={album._id} onClick={() => handleAlbumClick(album._id)}>*/}
+                    {/*        <Carousel value={album.songs} numVisible={6} numScroll={4} itemTemplate={(song) => (*/}
+                    {/*            <SongTemplate song={song} isLogin={isLogin} />*/}
+                    {/*        )} />*/}
+                    {/*    </div>*/}
                     ))}
-                </div>
+                {/*</div>*/}
             </div>
-            <AudioPlayer />
+            // <AudioPlayer />
         </div>
     );
 }

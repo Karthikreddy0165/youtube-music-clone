@@ -7,9 +7,9 @@ export const AudioProvider = ({ children }) => {
     const [currentSong, setCurrentSong] = useState(null);
     const [currentSongId, setCurrentSongId] = useState(null);
     const [isLogin, setIsLogin] = useState(false);
-    const [songs, setSongs] = useState([])
-    const [albums, setAlbums] = useState([])
-    const [artists, setArtists] = useState([])
+    const [songs, setSongs] = useState([]);
+    const [albums, setAlbums] = useState([]);
+    const [artists, setArtists] = useState([]);
 
     return (
         <AudioContext.Provider value={{

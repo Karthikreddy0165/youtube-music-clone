@@ -1,65 +1,51 @@
-import { useState } from 'react';
-import { Outlet, Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import Sidebar from '../Components /SideBar';
 import Navbar from '../Components /Navbar';
+import PageButtons from '../Components /PageButtons';
+import Songs from '../Components /Songs';
 
 function Library({ isLogin, setIsLogin }) {
+    const { page } = useParams();
     const [activeButton, setActiveButton] = useState('songs');
 
     const handleButtonClick = (buttonName) => {
         setActiveButton(buttonName);
     };
 
-    return (
-        <div className="flex flex-col">
-            <Sidebar handleButtonClick = {handleButtonClick} />
-            <Navbar isLogin={isLogin} setIsLogin={setIsLogin} />
+    useEffect(() => {
+        setActiveButton(page);
+    }, [page]);
 
-            <div className="mt-24 flex flex-col">
-                <div className="flex ml-80 gap-6 px-4">
-                    <Link to="/library/music">
-                        <button
-                            className={`rounded-md py-2 px-4  ${
-                                activeButton === 'songs' ? 'bg-white text-black' : 'bg-[#2C2B2F] text-[#C7C7C8]'
-                            } transition-colors duration-200`}
-                            onClick={() => handleButtonClick('songs')}
-                        >
-                            Songs
-                        </button>
-                    </Link>
-                    <Link to="/library/album">
-                        <button
-                            className={`rounded-md py-2 px-4  ${
-                                activeButton === 'albums' ? 'bg-white text-black' : 'bg-[#2C2B2F] text-[#C7C7C8]'
-                            } transition-colors duration-200`}
-                            onClick={() => handleButtonClick('albums')}
-                        >
-                            Albums
-                        </button>
-                    </Link>
-                    <Link to="/library/playlist">
-                        <button
-                            className={`rounded-md py-2 px-4  ${
-                                activeButton === 'playlists' ? 'bg-white text-black' : 'bg-[#2C2B2F] text-[#C7C7C8]'
-                            } transition-colors duration-200`}
-                            onClick={() => handleButtonClick('playlists')}
-                        >
-                            Playlists
-                        </button>
-                    </Link>
-                    <Link to="/library/artist">
-                        <button
-                            className={`rounded-md py-2 px-4  ${
-                                activeButton === 'artists' ? 'bg-white text-black' : 'bg-[#2C2B2F] text-[#C7C7C8]'
-                            } transition-colors duration-200`}
-                            onClick={() => handleButtonClick('artists')}
-                        >
-                            Artists
-                        </button>
-                    </Link>
+    const renderPageContent = () => {
+        switch (page) {
+            case 'music':
+                return <Songs />;
+            case 'album':
+                return <div className='text-white'>Sad Content</div>;
+            case 'artist':
+                return <div className='text-white'>Angry Content</div>;
+            case 'playlist':
+                return <div className='text-white'>Excited Content</div>;
+            default:
+                return <div className='text-white'>Select a page</div>;
+        }
+    };
+
+    return (
+        <div className='h-full bg-black'>
+            <Navbar isLogin={isLogin} setIsLogin={setIsLogin} />
+            <div className="flex">
+                <Sidebar isLogin={isLogin} />
+                <div className="flex flex-col w-full mt-16">
+                    <div className="ml-[17%]">
+                        <PageButtons activeButton={activeButton} setActiveButton={setActiveButton} />
+                    </div>
+                    <div className='overflow-y-auto'>
+                        {renderPageContent()}
+                    </div>
                 </div>
             </div>
-            <Outlet />
         </div>
     );
 }

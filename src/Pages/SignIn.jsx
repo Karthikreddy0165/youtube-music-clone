@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import InputField from '../Components /InputField'
-
+import {assets} from '../assets/assets'
 function SignIn({ setIsLogin }) {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -44,7 +44,7 @@ function SignIn({ setIsLogin }) {
                 <div className="flex gap-5 justify-between items-start px-8 pt-8 pb-5 mt-6 mb-1.5 max-w-full rounded-3xl bg-zinc-600 w-[814px] bg-opacity-70 max-md:flex-wrap max-md:px-5">
                     <div className="flex flex-col self-start text-2xl text-white">
                         <img
-                            src="https://banner2.cleanpng.com/20180521/ers/kisspng-google-logo-5b02bbe1d5c6e0.2384399715269058258756.jpg"
+                            src={assets.googleLogo}
                             alt=""
                             className="aspect-square w-[34px]"
                         />

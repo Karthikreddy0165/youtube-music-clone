@@ -4,7 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2902b33-a96b-4405-a86a-7aac48f88724" name="Changes" comment="" />
+    <list default="true" id="a2902b33-a96b-4405-a86a-7aac48f88724" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components /Albums.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components /Albums.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components /Angry.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components /AudioPlayer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components /AudioPlayer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components /Carousel.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components /Carousel.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components /Exicted.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components /Happy.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components /Mood.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components /Mood.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components /Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components /Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components /Romantic.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components /Sad.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components /SearchInput.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components /SearchInput.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components /SideBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components /SideBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components /SongTemplate.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components /SongTemplate.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components /Songs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components /Songs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Library.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Library.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/ProfilePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/ProfilePage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/SignIn.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/SignIn.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/SignUp.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/SignUp.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Upgrade.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Upgrade.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/assets.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/assets.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/subsImg4 .png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/AudioContext.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/AudioContext.jsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +39,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JSX File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -46,7 +72,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
     "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
   }
@@ -228,7 +254,11 @@
       <workItem from="1721146987245" duration="536000" />
       <workItem from="1721191202444" duration="6090000" />
       <workItem from="1721326069757" duration="15497000" />
-      <workItem from="1721724895937" duration="13769000" />
+      <workItem from="1721724895937" duration="21751000" />
+      <workItem from="1721880529569" duration="2263000" />
+      <workItem from="1721983496672" duration="18062000" />
+      <workItem from="1722078201245" duration="1491000" />
+      <workItem from="1722081776432" duration="24593000" />
     </task>
     <servers />
   </component>
@@ -245,5 +275,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

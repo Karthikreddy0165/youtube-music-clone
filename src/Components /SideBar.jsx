@@ -7,7 +7,7 @@ export default function Sidebar({isLogin, handleButtonClick}) {
     return (
         <div className='w-[17%] h-screen bg-black fixed top-16'>
             <Link to="/">
-                <div  onClick={() => handleButtonClick('')}
+                <div
                     className="flex items-center text-white p-3 gap-6 mb-2 mt-4 hover:bg-neutral-700 rounded-lg">
                     <img src={assets.home} className="w-4 h-5 cursor-pointer"/>
                     <p>Home</p>
@@ -15,7 +15,7 @@ export default function Sidebar({isLogin, handleButtonClick}) {
             </Link>
 
             <Link to="/library/music">
-            <div onClick={() => handleButtonClick('songs')}
+            <div
                 className="flex items-center text-white p-3 gap-6 mb-2 hover:bg-neutral-700 rounded-lg ">
                 <img src={assets.library} className="w-5 h-5 cursor-pointer"/>
                 <p>Library</p>
